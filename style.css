@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 375px;
+  min-height: 100vh;
+  background: #f7c6c6;
+  font-family: 'Montserrat', sans-serif;
+
+  /* safe-area iPhone */
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.invite {
+  flex: 1;
+}
+
+.invite img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Таймер */
+.timer {
+
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 10px calc(14px + env(safe-area-inset-bottom));
+  border-top: 1px solid #e5e5e5;
+  margin-top: -80px;
+}
+
+.time {
+  flex: 1;
+  text-align: center;
+}
+
+.time span {
+  display: inline-block;
+  font-size: 26px;
+  font-family: 'Playfair Display', serif;
+  color: #000;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.time span.flip {
+  transform: translateY(-6px);
+  opacity: 0.3;
+}
+
+.time small {
+  display: block;
+  font-size: 11px;
+  color: #777;
+  margin-top: 2px;
+}
+.invite {
+  flex: 1;
+  background: #f7c6c6;
+  background-image: url("bg.jpg"); /* твой фон */
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.invite-content {
+  color: #111;
+}
+
+/* Н и Ж */
+.top-letter,
+.bottom-letter {
+
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  font-weight: 300;
+  letter-spacing: 6px;
+  margin: 18px 0;
+}
+
+/* Имена */
+.name-block {
+  margin: 20px 0;
+}
+
+.name {
+  font-size: 64px; /* ОБЪЁМ */
+  line-height: 1.1;
+}
+
+.script {
+
+
+  font-family: 'Alex Brush', cursive;
+  font-weight: 400;
+  letter-spacing: 2px;
+
+  /* визуальный объём */
+  text-shadow:
+    0 1px 0 rgba(0,0,0,0.08),
+    0 3px 6px rgba(0,0,0,0.08);
+}
+
+/* Линии и & */
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 14px 0;
+}
+
+.divider span {
+  width: 46px;
+  height: 1px;
+  background: #222;
+  opacity: 0.6;
+}
+
+.divider i {
+  margin: 0 12px;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  font-style: normal;
+}
